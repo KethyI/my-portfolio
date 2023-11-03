@@ -5,13 +5,29 @@
     --heading-font-family: "Playfair Display", serif;
 }
 
+body {
+    font-family: var(--main-font-family);
 
+}
 .hero {
     background-color: var(--secontary-color);
     padding: 160px 20px;
     text-align: center;
     font-family: var(--main-font-family);
 
+}
+
+h2 {
+    font-family: var(--heading-font-family);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+p {
+    opacity: 70%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
 }
 
 .hero p {
@@ -45,6 +61,18 @@
     padding: 15px 30px;
 }
 
+.project-p {
+    padding: 120px 60px;
+}
+
+.project-p a {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 15px 30px;
+    line-height: 27px;
+    font-size: 18px;
+}
+
 .hero a:hover {
     background-color: var(--main-color);
     border: none;
@@ -54,4 +82,32 @@
 
 .hero a:visited {
     color: var(--secontary-color);
+}
+
+.project-p a:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    text-decoration: none;
+
+
+}
+
+@media (max-width: 900px) {
+    .hero h1 {
+      font-size: 50px;
+      line-height: 2;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .project-p {
+        text-align: center;
+        padding: 20px
+    }
 }
