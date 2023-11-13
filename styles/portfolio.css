@@ -1,6 +1,6 @@
 :root {
     --main-color: #6c63ff;
-    --secontary-color: #f9f7fe;
+    --secondary-color: #f9f7fe;
     --main-font-family: "Poppins", sans-serif;
     --heading-font-family: "Playfair Display", serif;
 }
@@ -10,11 +10,18 @@ body {
 
 }
 .hero {
-    background-color: var(--secontary-color);
+    background-color: var(--secondary-color);
     padding: 160px 20px;
     text-align: center;
     font-family: var(--main-font-family);
 
+}
+
+.about-hero {
+    padding: 160px 20px;
+    text-align: center;
+    font-family: var(--main-font-family);
+  
 }
 
 h2 {
@@ -55,7 +62,7 @@ p {
 .hero a {
     background-color: var(--main-color);
     border-radius: 4px;
-    color: var(--secontary-color);
+    color: var(--secondary-color);
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
@@ -75,17 +82,30 @@ p {
 
 .reasons {
     display: inline;
+    /* margin: 5px 5px 5px 0; */
+}
+
+.reasons-reverse {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 15px 30px;
+    line-height: 27px;
+    font-size: 18px;
+    /* margin: 5px 5px; */
+
+
 }
 
 .hero a:hover {
     background-color: var(--main-color);
     border: none;
-    color: var(--secontary-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 .hero a:visited {
-    color: var(--secontary-color);
+    color: var(--secondary-color);
 }
 
 .project-p a:hover {
