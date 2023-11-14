@@ -1,137 +1,151 @@
 :root {
-    --main-color: #6c63ff;
-    --secondary-color: #f9f7fe;
-    --main-font-family: "Poppins", sans-serif;
-    --heading-font-family: "Playfair Display", serif;
+  --main-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --main-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
 }
 
 body {
-    font-family: var(--main-font-family);
+  font-family: var(--main-font-family);
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font-family);
 }
 .hero {
-    background-color: var(--secondary-color);
-    padding: 160px 20px;
-    text-align: center;
-    font-family: var(--main-font-family);
-
+  background-color: var(--secondary-color);
+  padding: 160px 20px;
+  text-align: center;
+  font-family: var(--main-font-family);
 }
 
 .about-hero {
-    padding: 160px 20px;
-    text-align: center;
-    font-family: var(--main-font-family);
-  
+  padding: 160px 20px;
+  text-align: center;
+  font-family: var(--main-font-family);
+}
+
+.projects {
+  padding: 160px 20px;
+  text-align: center;
 }
 
 h2 {
-    font-family: var(--heading-font-family);
-    font-size: 64px;
-    font-weight: bold;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 50px;
 }
 
 p {
-    opacity: 70%;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: normal;
+  opacity: 70%;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .hero p {
-    font-size: 36px;
-    font-family: var(--main-font-family);
-    font-weight: bold;
-    color: #272142;
-    margin: 0;
+  font-size: 36px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  color: #272142;
+  margin: 0;
 }
 
 .hero h1 {
-    font-family: var(--heading-font-family);
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 1.2;
-    margin-bottom: 8px;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .hero h2 {
-    font-family: var(--heading-font-family);
-    line-height: 2;
-    font-size: 24px;
-}
-
-.hero a {
-    background-color: var(--main-color);
-    border-radius: 4px;
-    color: var(--secondary-color);
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+  font-family: var(--heading-font-family);
+  line-height: 2;
+  font-size: 24px;
 }
 
 .project-p {
-    padding: 120px 60px;
+  padding: 120px 60px;
 }
 
-.project-p a, .reasons {
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
-    padding: 15px 30px;
-    line-height: 27px;
-    font-size: 18px;
+.project-p a,
+.reasons {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 15px 30px;
+  line-height: 27px;
+  font-size: 18px;
 }
 
 .reasons {
-    display: inline;
-    /* margin: 5px 5px 5px 0; */
+  display: inline;
 }
 
-.reasons-reverse {
-    background-color: var(--main-color);
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    padding: 15px 30px;
-    line-height: 27px;
-    font-size: 18px;
-    /* margin: 5px 5px; */
+.project-description {
+  margin-top: 100px;
+}
 
+.dark-btn {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 15px 30px;
+  line-height: 27px;
+  font-size: 18px;
+}
 
+.projects h1 {
+  font-size: 64px;
 }
 
 .hero a:hover {
-    background-color: var(--main-color);
-    border: none;
-    color: var(--secondary-color);
-    text-decoration: none;
+  background-color: var(--main-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .hero a:visited {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .project-p a:hover {
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
-    text-decoration: none;
-
-
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
-    .hero h1 {
-      font-size: 50px;
-      line-height: 2;
-    }
+  .hero h1,
+  .projects h1 {
+    font-size: 50px;
+    line-height: 2;
+  }
 
-    .hero {
-        padding: 50px 20px;
-    }
+  .hero,
+  .about-hero,
+  .projects {
+    padding: 50px 20px;
+  }
 
-    h2 {
-        font-size: 50px;
-    }
+  h2 {
+    font-size: 50px;
+  }
 
-    .project-p {
-        text-align: center;
-        padding: 20px
-    }
+  .project-p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-description {
+    margin-top: 20px;
+  }
 }
