@@ -110,6 +110,35 @@ p,
   padding: 70px 0;
 }
 
+nav {
+  padding: 20px 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 10px;
+  margin-bottom: 0;
+  list-style-type: none;
+  display: inline;
+  line-height: 50px;
+}
+
+.active,
+nav a:hover {
+  color: var(--main-color);
+}
+
+.logo {
+  font-size: 30px;
+  padding: 10px;
+  margin: 0;
+}
+
+li a {
+  color: #272142;
+  text-decoration: none;
+}
+
 .about-hero h1 {
   font-size: 64px;
 }
