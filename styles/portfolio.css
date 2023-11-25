@@ -17,9 +17,57 @@ h5 {
   font-family: var(--heading-font-family);
 }
 
+h2 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+nav {
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav p {
+  color: white;
+}
+
+nav li {
+  margin-left: 10px;
+  margin-bottom: 0;
+  list-style-type: none;
+  display: inline;
+  line-height: 50px;
+}
+
+li a {
+  color: #272142;
+  text-decoration: none;
+}
+
+p {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.link-social {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
 .hero {
   background-color: var(--secondary-color);
-  padding: 160px 20px;
+  padding: 160px 20px 100px;
   text-align: center;
   font-family: var(--main-font-family);
 }
@@ -35,25 +83,7 @@ h5 {
   text-align: center;
 }
 
-h2 {
-  font-size: 64px;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 50px;
-}
-
-p,
-.link-social {
-  opacity: 70%;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-.hero p,
-.link-social {
+.hero p {
   font-size: 36px;
   font-family: var(--main-font-family);
   font-weight: bold;
@@ -77,7 +107,7 @@ p,
 }
 
 .project-p {
-  padding: 90px 60px;
+  padding: 40px 60px;
 }
 
 .reasons {
@@ -86,9 +116,6 @@ p,
   padding: 15px 30px;
   line-height: 27px;
   font-size: 18px;
-}
-
-.reasons {
   display: inline;
 }
 
@@ -110,33 +137,19 @@ p,
   padding: 70px 0;
 }
 
-nav {
-  padding: 20px 0;
-  margin: 0;
-}
-
-nav li {
-  margin-left: 10px;
-  margin-bottom: 0;
-  list-style-type: none;
-  display: inline;
-  line-height: 50px;
-}
-
-.active,
-nav a:hover {
-  color: var(--main-color);
-}
-
 .logo {
   font-size: 30px;
   padding: 10px;
   margin: 0;
 }
 
-li a {
-  color: #272142;
-  text-decoration: none;
+.navigation-bar {
+  background-color: var(--main-color);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px 40px;
+  max-width: 100%;
+  color: white;
 }
 
 .about-hero h1 {
@@ -151,6 +164,40 @@ li a {
   font-size: 64px;
 }
 
+.footer-box {
+  padding: 40px;
+  background-color: var(--secondary-color);
+}
+
+.footer-box a {
+  margin: 20px 0;
+}
+
+.footer-box p {
+  margin: 0;
+}
+
+footer .logo-footer a,
+footer .logo-footer a:visited {
+  color: var(--main-color);
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px 10px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  line-height: 1;
+}
+
+footer .logo-footer a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.active,
+nav a:hover {
+  color: var(--secondary-color);
+}
+
 .hero a:hover {
   background-color: var(--main-color);
   border: 1px solid var(--secondary-color);
@@ -163,7 +210,9 @@ li a {
 }
 
 .project-p a:hover,
-.projects-contact a:hover {
+.projects-contact a:hover,
+.reasons:hover,
+.dark-btn:hover {
   color: var(--main-color);
   border: 1px solid var(--main-color);
   text-decoration: none;
