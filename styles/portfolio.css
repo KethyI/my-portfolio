@@ -169,8 +169,8 @@ p {
   background-color: var(--secondary-color);
 }
 
-.footer-box a {
-  margin: 20px 0;
+.footer-box .dark-btn {
+  margin: 20px auto;
 }
 
 .footer-box p {
@@ -246,5 +246,10 @@ a.link-social:hover {
 
   .project-description {
     margin-top: 20px;
+  }
+
+  .footer-box h3,
+  .footer-box p {
+    text-align: center;
   }
 }
