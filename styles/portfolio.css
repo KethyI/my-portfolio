@@ -73,13 +73,13 @@ p {
 }
 
 .about-hero {
-  padding: 160px 20px;
+  padding: 160px 20px 100px;
   text-align: center;
   font-family: var(--main-font-family);
 }
 
 .projects-contact {
-  padding: 160px 20px;
+  padding: 160px 20px 100px;
   text-align: center;
 }
 
@@ -139,8 +139,10 @@ p {
 
 .logo {
   font-size: 30px;
-  padding: 10px;
+  padding: 60px 10px 10px;
   margin: 0;
+  color: white;
+  text-decoration: none;
 }
 
 .navigation-bar {
@@ -210,12 +212,17 @@ nav a:hover {
 }
 
 .project-p a:hover,
-.projects-contact a:hover,
-.reasons:hover,
-.dark-btn:hover {
+.reasons:hover {
   color: var(--main-color);
   border: 1px solid var(--main-color);
   text-decoration: none;
+}
+
+.dark-btn:hover {
+  color: white;
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  background-color: var(--main-color);
 }
 
 a.link-social:hover {
@@ -232,7 +239,7 @@ a.link-social:hover {
   .hero,
   .about-hero,
   .projects-contact {
-    padding: 50px 20px;
+    padding: 80px 20px;
   }
 
   h2 {
